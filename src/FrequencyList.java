@@ -28,7 +28,7 @@ public class FrequencyList
             String[]: Array of words that is recieved from user via Scanner
 
      */
-    public static String[] get_words(int numwords){
+    public static String[] get_words(Scanner input, int numwords){
         <YOUR CODE HERE>
     }
 
@@ -51,12 +51,12 @@ public class FrequencyList
     public static void main(String[] args)
     {
         int numwords;
-        // Implement a Scanner
+        // Implement a Scanner (call it input)
         <YOUR CODE HERE>
         // Get an int from the Scanner and save it to numwords
         <YOUR CODE HERE>
 
-        String[] line = get_words(numwords);
+        String[] line = get_words(input, numwords);
         ArrayList<String> unique_words = get_unique_words(line);
         for(int i=0;i< unique_words.size();i++)
         {
