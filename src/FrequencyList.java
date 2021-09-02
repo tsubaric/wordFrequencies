@@ -34,7 +34,7 @@ public class FrequencyList
 
     /*
         Go through every element in String[] line and find all
-        unique words
+        words
 
         input:
             String[] line: Array of words
