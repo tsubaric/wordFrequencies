@@ -6,7 +6,6 @@ public class FrequencyList {
     /*
       Given a single String word, traverse the String[] line
       to find the number of times word is given in line
-
       input:
         String word: Word we are looking for
         String[] line: Array of words
@@ -24,12 +23,10 @@ public class FrequencyList {
     }
     /*
         Create a String[] of size numwords that is populated with words a scanner
-
         input:
             int numwords: the number of words to be expected as input
         output:
             String[]: Array of words that is recieved from user via Scanner
-
      */
     public static String[] get_words (Scanner input, int numWords){
         String[] words = new String[numWords];
@@ -38,17 +35,7 @@ public class FrequencyList {
         }
         return words;
     }
-    /*
-        Go through every element in String[] line and find all
-        words
 
-        input:
-            String[] line: Array of words
-        output:
-            ArrayList<String>: An Arraylist containing all the unique words in line
-
-        hint: Arraylists have a method called contains
-     */
     public static ArrayList<String> get_unique_words (String[] line)
     {
         ArrayList<String> uniWords = new ArrayList<String>();
@@ -65,7 +52,6 @@ public class FrequencyList {
         // Implement a Scanner (call it input)
         Scanner input = new Scanner(System.in);
         // Get an int from the Scanner and save it to numwords
-        //<YOUR CODE HERE>
         int numWords = input.nextInt();
         String[] line = get_words(input, numWords);
         ArrayList<String> unique_words = get_unique_words(line);
